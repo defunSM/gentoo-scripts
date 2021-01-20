@@ -3,6 +3,8 @@ set -euo pipefail
 source ./ask.sh
 
 # Majority of commands taken directly from https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation
+# The functions here are to help automate some of the gentoo installation process
+# These particular functions are designed with a UEFI system in mind along with systemd stage 3 tarbell
 
 function partition_drive {
     lsblk
